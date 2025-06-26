@@ -1,6 +1,7 @@
 import json
 import boto7
 
+
 def lambda_handler(event, context):
     client = boto3.client('ec2')
     response = client.run_instances(
